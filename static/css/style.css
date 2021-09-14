@@ -6,6 +6,11 @@ body{
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5) ;
 }
 
+.brand-logo{
+    margin-left: 20px;
+    
+}
+
 .flashes h4 {
     line-height: 2;
 }

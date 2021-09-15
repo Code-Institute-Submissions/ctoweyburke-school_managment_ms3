@@ -1,6 +1,13 @@
-body{
-    background-color:lightgrey;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+  body {
+    background-image: url('https://image.shutterstock.com/image-vector/set-pink-white-transparent-confetti-600w-1122183473.jpg' );
+    background-repeat:no-repeat;
+    background-size: cover; 
+    height: 750px;
+  }
+
 
 .text-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5) ;

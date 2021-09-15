@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="purple-text text-darken-4 center-align">Add Task</h3>
+    <h3 class="purple-text text-darken-4 center-align">Add Event</h3>
 
     <div class="row card-panel white">
         <form class="col s12" method="POST" action="{{ url_for('add_task') }}">
@@ -10,12 +10,12 @@
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix light-purple-text"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled selected>Choose Name</option>
                       {% for category in categories %}
                         <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                       {% endfor %}
                     </select>
-                    <label for="category_name">Task Category</label>
+                    <label for="category_name">Person</label>
                   </div>
             </div>
             <!-- Task name -->
@@ -24,7 +24,7 @@
                     <i class="fas fa-pencil-alt prefix light-purple-text"></i>
                     <input id="task_name" name="task_name" minlenght="5" maxlength="20" 
                     type="text" class="validate" required>
-                    <label for="task_name">Task Name</label>
+                    <label for="task_name">Event Name</label>
                 </div>
             </div>  
             <!-- Task Name -->
@@ -33,7 +33,7 @@
                     <i class="fas fa-align-left prefix light-purple-text"></i>
                     <textarea id="task_description" name="task_description" minlength="5" 
                     maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="task_description">Textarea</label>
+                    <label for="task_description">Event details/present</label>
                 </div>
             </div>
             <!-- date picker -->
@@ -42,7 +42,7 @@
                     <i class="fas fa-calendar-alt prefix light-purple-text"></i>
                     <input id="due_date" name="due_date  
                     type="text" class="datepicker validate" required>
-                    <label for="due_date">Due Date</label>
+                    <label for="due_date">Organise by date</label> Date</label>
                 </div>
             </div>  
             <div class="row">
@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col s12 center-">
                     <button class="submit btn-large light-purpe darken 1 text-shadow">
-                        Add Task <i class="fas fa-plus square right"></i>
+                        Add Event <i class="fas fa-plus square right"></i>
                     </button>
                 </div>
             </div>

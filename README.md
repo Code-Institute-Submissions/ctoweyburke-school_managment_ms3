@@ -1,6 +1,6 @@
 <h1 align="center">Event Management Website </h1>
 
-[https://dashboard.heroku.com/apps/flask-school-manager-project]()
+[]()
 
 This is an Event Management Website for friends/families to share events. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for people workign on desktop, labtop or mobile.
 
@@ -37,6 +37,7 @@ This is an Event Management Website for friends/families to share events. It is 
 
 *   ### Wireframes
 
+Home Page - https://share.balsamiq.com/c/eTyfcmCJG6b7CLHPBJouqz.png
 
 
 ## Features

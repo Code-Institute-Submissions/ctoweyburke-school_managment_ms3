@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-
   body {
+    font-family: sans-serif;
     background-image: url('https://image.shutterstock.com/image-vector/set-pink-white-transparent-confetti-600w-1122183473.jpg' );
     background-repeat:no-repeat;
     background-size: cover; 
@@ -14,9 +14,20 @@
 }
 
 .brand-logo{
-    margin-left: 10px;
-    
-}
+    margin-left: 20px;
+    padding: 5px;
+    }
+
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) { 
+        .brand-logo { 
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+    }
+
 
 .flashes h4 {
     line-height: 2;

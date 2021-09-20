@@ -116,7 +116,6 @@ def add_task():
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
-            
             "created_by": session["user"]
         }
         mongo.db.tasks.insert_one(task)

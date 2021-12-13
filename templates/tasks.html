@@ -1,5 +1,5 @@
-{% extends "base.html"%}
-{% block content%}
+{% extends "base.html" %}
+{% block content %}
 
 <h3 class="purple-text text-darken-4 center-align">All events</h3>
 
@@ -36,8 +36,8 @@
                 <div class="col s9">
                     <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
                     {% if task.is_urgent == "on" %}
-                    <i class="fas fa-exclamation-circle purple-text.text-lighten-2 tooltipped"
-                    data-position="right" data-tooltip="URGENT!"></i></i>
+                    <i class="fas fa-exclamation-circle purple-text text-lighten-2 tooltipped"
+                    data-position="right" data-tooltip="URGENT!"></i>
                     {% endif %}
                 </div>
                 
@@ -51,7 +51,7 @@
         </li>
         {% endfor %}
     </ul>
-    {% else%}
+    {% else %}
         <h3 class="red-text text-darken-4 center-align">No event found</h3>
     {% endif %}   
 

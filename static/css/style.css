@@ -2,13 +2,13 @@
 
   body {
     font-family: sans-serif;
-    background-image: url('https://image.shutterstock.com/image-vector/set-pink-white-transparent-confetti-600w-1122183473.jpg' );
+    background-image: url('https://i.pinimg.com/originals/50/5e/61/505e6173efb1eeb2381587ee731426be.jpg');
     background-repeat:no-repeat;
     background-size: cover; 
     height: 1000px;
   }
 
-
+ 
 .text-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5) ;
 }

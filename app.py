@@ -32,11 +32,10 @@ def search():
     return render_template("tasks.html", tasks=tasks)
 
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        #check if username already exists in db
+        # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -50,10 +49,11 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        #put the new user into "session" cookie
+        # put the new user into session cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful")
         return redirect(url_for("profile", username=session["user"]))
+
     return render_template("register.html")
 
 
@@ -65,20 +65,20 @@ def login():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            #ensure hashed password matches user input
+            # ensure hashed password matches user input
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(
                         request.form.get("username")))
                     return redirect(url_for(
-                        "profile", username=session["user"]))                    
-            else: 
+                        "profile", username=session["user"]))
+            else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
-        else: 
+        else:
             #username doesn't exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
@@ -86,13 +86,13 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/profile/<username>", methods =["GET", "POST"])
+@app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
-    if session["user"]:    
+    if session["user"]:
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
@@ -100,7 +100,7 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
-    # remove user from session cookies
+    # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -112,7 +112,7 @@ def add_task():
         is_urgent = "on" if request.form.get("is_urgent") else "off"
         task = {
             "category_name": request.form.get("category_name"),
-            "task_name" : request.form.get("task_name"),
+            "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
@@ -132,7 +132,7 @@ def edit_task(task_id):
         is_urgent = "on" if request.form.get("is_urgent") else "off"
         submit = {
             "category_name": request.form.get("category_name"),
-            "task_name" : request.form.get("task_name"),
+            "task_name": request.form.get("task_name"),
             "task_description": request.form.get("task_description"),
             "is_urgent": is_urgent,
             "due_date": request.form.get("due_date"),
@@ -140,7 +140,6 @@ def edit_task(task_id):
         }
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
         flash("Event Successfully Updated")
-        
 
 
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
@@ -176,7 +175,7 @@ def add_category():
 
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
-    if request.method  == "POST":
+    if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name")
         }
@@ -194,7 +193,8 @@ def delete_category(category_id):
     flash("Person Successfully Deleted")
     return redirect(url_for("get_categories"))
 
-if  __name__ == "__main__":
+
+if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)

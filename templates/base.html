@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Event Manager</title>
+    <title>School Meetings</title>
 
 
 </head>
@@ -18,36 +18,38 @@
 
     <header>
         <!-- top navbar -->
-            <nav class="nav-extended text-shadow purple lighten-2">
+            <nav class="nav-extended teal lighten-2">
                 <div class="nav-wrapper">
-                <a href="{{ url_for('get_tasks') }}" class="brand-logo">Events Manager</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                        <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                  <a href="{{ url_for('get_tasks') }}" class="brand-logo center">School Meetings</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
                         {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="{{ url_for('add_task') }}">New Event</a></li>
+                        <li><a href="{{ url_for('profile', username=session['user']) }}">Teacher Profile</a></li>
+                        <li><a href="{{ url_for('add_task') }}">New Meeting</a></li>
                         {% if session.user|lower == "admin"|lower %}
-                            <li><a href="{{ url_for('get_categories') }}">Add/Edit People</a></li>
+                            <li><a href="{{ url_for('get_categories') }}">Add/Edit Meeting</a></li>
                         {% endif %}
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}">Log In</a></li>
                         <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
-                </ul>
+                  </ul>
                 </div>
-            </nav>
+                
+              </nav>
             
+
         <!--mobile sidenav-->    
             <ul class="sidenav" id="mobile-demo">
-                <li><h4 class="center-align light-blue-text text-darken 4">Events</h4></li>
+                <li><h4 class="center-align light-blue-text text-darken 4">Meetings</h4></li>
                     <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="{{ url_for('add_task') }}">New Event</a></li>
+                        <li><a href="{{ url_for('profile', username=session['user']) }}">Teacher Profile</a></li>
+                        <li><a href="{{ url_for('add_task') }}">New Meeting</a></li>
                         {% if session.user|lower == "admin"|lower %}
-                        <li><a href="{{ url_for('get_categories') }}">Add/Edit People</a></li>
+                        <li><a href="{{ url_for('get_categories') }}">Add/Edit Meeting</a></li>
                         {% endif %}
                         <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
@@ -63,7 +65,7 @@
             {% if messages %}
                 {% for message in messages %}
                     <div class="row flashes">
-                        <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+                        <h4 class="teal lighten-2 center-align">{{ message }}</h4>
                     </div>
                 {% endfor %}
             {% endif %}

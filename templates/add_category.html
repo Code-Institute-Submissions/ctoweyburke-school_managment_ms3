@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="purple-text text-darken-4 center-align">Add Person</h3>
+    <h3 class="teal-text lighten-2 center-align">Add Department</h3>
 
-    <div class="row card-panel white">
+    <div class="row card-panel grey lighten-2">
         <form class="col s12" method="POST" action="{{ url_for('add_category') }}">
             
             <!-- Category name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-open prefix light-purple-text"></i>
+                    <i class="fas fa-open prefix teal-text"></i>
                     <input id="category_name" name="category_name" minlenght="3" maxlength="25" 
                     type="text" class="validate" required>
-                    <label for="category_name">Full Name</label>
+                    <label for="category_name">Department/Topic</label>
                 </div>
             </div>  
             
             <!--Submit Button-->
             <div class="row">
                 <div class="col s12 center-">
-                    <button class="submit btn-large purple text-shadow">
-                        <i class="fas fa-restroom"></i>
-                        Add Person
+                    <button class="submit btn-large teal text-shadow">
+                        <i class="fas fa-meet"></i>
+                        Add Meeting
                 </div>
             </div>
         </form>

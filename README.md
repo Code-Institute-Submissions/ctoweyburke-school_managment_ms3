@@ -260,13 +260,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   All content was written by the developer using the Code Institute Tutorial on the backend development milestone project by [Code Institute](https://codeinstitute.net). The content has been adapted to suit the site needs. 
+-   All content for the database was written by the developer using the Code Institute Tutorial on the backend development milestone project by [Code Institute](https://codeinstitute.net). The content has been adapted to suit the site needs. 
+
+- Further code was sourced from Materalize to complete the footer for this project.
 
 
 ### Media
 
 -   Icons were used from this site - [Font-Awesome](https://fontawesome.com/).
--   Images are used and hve been referenced above.
+-   Images are used and have been referenced above.
 
 
 ### Acknowledgements

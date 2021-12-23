@@ -3,13 +3,22 @@
 
 body {
     font-family: rubik;
-    background-image: #e8eced url('../images/images/gcc.jpg') no-repeat center;
-    background-repeat:no-repeat;
-    height: auto;
-        
+            
     }
     
+    .topnav img {
+        width: auto;
+        height: 75px;
+        float: left;
+    }
 
+    @media screen and (max-width: 600px) {
+        .topnav img {
+          float: left;
+          width: auto;
+          height: 50px;
+        }
+      }
  
 .text-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5) ;
@@ -24,12 +33,11 @@ body {
     and (min-device-width : 375px) 
     and (max-device-width : 667px) { 
         .brand-logo { 
-            margin-left: 5px;
-            font-size: 10px;
-        }
-
-    }
-
+                  float: center;
+                  width: 50%;
+                }
+              }
+     
 
 .flashes h4 {
     line-height: 2;

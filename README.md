@@ -1,11 +1,11 @@
-<h1 align="center">Event Management Website </h1>
+<h1 align="center">School Meetings Management Website </h1>
 
 [View the live project here.](https://flask-school-mgt-project.herokuapp.com/)
 
 This is an Event Management Website for friends/families to share events. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for people working on desktop, labtop or mobile.
 
 
-** Site set up as a School Management Site but changed to Event Management. Unfortunately, not sure how to change URL name?
+** Site set up as a School Management Site
 
 <h2 align="center"><img src="static/images/responsive/amiresponsive.png"></h2>
 
@@ -17,36 +17,37 @@ This is an Event Management Website for friends/families to share events. It is 
 
         1. <i>As a First Time Visitor</i>, I want to easily understand the main purpose of the site and learn more about what it can do for me.
         2. <i>As a First Time Visitor</i>, I want to be able to easily navigate throughout the site to find content and get an idea of what use it is.
-        3. <i>As a First Time Visitor</i>, I want to be able to see how it would help me make management of events simpler and register.
+        3. <i>As a First Time Visitor</i>, I want to be able to see how it would help me make logging meetings and checking for meetings simpler.
 
     -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to log in easily.
-        2. As a Returning Visitor, I want to be able to add to this database online.
-        3. As a Returning Visitor, I want to edit or add new people and events and see others inputs.
+        2. As a Returning Visitor, I want to be able to add to this meeting schedule.
+        3. As a Returning Visitor, I want to add meetings and see other school meetings.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if anyone has updated the database with new events.
-        2. As a Frequent User, I want to check to see if anyone has deleted any events.
-        3. As a Frequent User, I want add new people and events throughout the year.
+        1. As a Frequent User, I want to check to see if anyone has updated the database with new meetings.
+        2. As a Frequent User, I want to check to see if anyone has deleted any meetings.
+        3. As a Frequent User, I want to be able to add meetings and check updates.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are purple & white/grey. The colours used are bright and contrast well with each other. I sourced the colours using Materalize webiste - CSS.
+        -   The three main colours used are indigo, red and grey.
+        The colours used are bright and contrast well with each other. I sourced the colours using Materalize webiste - CSS. They are linked to the school colours of indigo and red.
 
         https://materializecss.com/color.html
 
     -   #### Typography
-        -   The sans-serif font is the main font used throughout the whole website.
-        Sans-serif is a clean font used frequently. It is clear and easily to read. 
+        -   The rubik font is the main font used throughout the whole website.
+        Rubik Beastly is an original, script-generated design based on the Google Fonts. They designed a slightly rounded heavyweight font in which the letters fit perfectly in a single cubelet of the Rubik's Cube. It is clear and easily to read, and useful in a professional setting. 
 
     -   #### Imagery
         -   Imagery is important to this site. The large, background image is designed to be appealing and catch the user's attention as to what the webiste is for. It also has a modern feel which would relate to events/parties.
 
         Background image for site pages
-        <img src="https://image.shutterstock.com/image-vector/set-pink-white-transparent-confetti-600w-1122183473.jpg">
+        <img src="">
         
-        As this is a "Shutterstock" image, I really wanted this image even though it has a watermark. This image is used for development purposes only. 
+        I used the school logo as the main image for the project. This image is used for development purposes only. 
 
 *   ### Wireframes
 
@@ -127,10 +128,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [Lighthouse](developers tool)
     <img src="static/images/lighthouse/lighthouse1.png">
-    <img src="static/images/lighthouse/lighthouse2.png">
-    <img src="static/images/lighthouse/lighthouse3.png">
-    <img src="static/images/lighthouse/lighthouse4.png">
-    <img src="static/images/lighthouse/lighthouse5.png">
+ 
 
 
 

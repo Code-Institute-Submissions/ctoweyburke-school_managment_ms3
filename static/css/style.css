@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-  
+
+body {
+    font-family: rubik;
+    background-image: #e8eced url('../images/images/gcc.jpg') no-repeat center;
+    background-repeat:no-repeat;
+    height: auto;
+        
+    }
+    
 
  
 .text-shadow {

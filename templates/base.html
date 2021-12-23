@@ -15,7 +15,7 @@
 
 </head>
 <body>
-
+                
     <header>
         <!-- top navbar -->
             <nav class="nav-extended teal lighten-2">
@@ -23,7 +23,8 @@
                   <a href="{{ url_for('get_tasks') }}" class="brand-logo center">School Meetings</a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="left hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                    <li>
+                        <a href="{{ url_for('get_tasks') }}">Home</a></li>
                         {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Teacher Profile</a></li>
                         <li><a href="{{ url_for('add_task') }}">New Meeting</a></li>
@@ -43,7 +44,7 @@
 
         <!--mobile sidenav-->    
             <ul class="sidenav" id="mobile-demo">
-                <li><h4 class="center-align light-blue-text text-darken 4">Meetings</h4></li>
+                <li><h4 class="center-align teal-text lighten-2">Meetings</h4></li>
                     <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Teacher Profile</a></li>
@@ -76,6 +77,33 @@
         {% block content %}
         {% endblock %}
     </main>
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h4 class="white-text">Galway Community College</h4>
+              <p class="grey-text text-lighten-4">Post Primary & PLC College.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links to Curriculum sites</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.jct.ie/home/home.php">Junior Cert</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://ncca.ie/en/senior-cycle/programmes-and-key-skills/leaving-certificate-established/">Leaving Cert</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.pdst.ie/lca">Leaving Cert Applied</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.qualifax.ie/index.php?option=com_wrapper&view=wrapper&Itemid=194">Post Leaving Cert</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Copyright - Development Purpose only
+          <a class="grey-text text-lighten-4 right" href="https://www.gov.ie/en/organisation/department-of-education/">Department of Education</a>
+          </div>
+        </div>
+      </footer>
+          
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

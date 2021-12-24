@@ -48,9 +48,9 @@ This is a School Meetings Management Website for all school staff to share work 
 
 *   ### Wireframes
 
-Home Page  
+Home Page  - Main page
 
-<img src="static/images/wireframes/base_lhomepage.png">
+<img src="static/images/wireframes/base_homepage.png">
 
 Register Page  
 
@@ -64,17 +64,17 @@ Profile Page
 
 <img src="static/images/wireframes/profilepage.png">
 
-Add Category - People
+Add Category - Meeting
 
-<img src="static/images/wireframes/addcategory_people.png">
+<img src="static/images/wireframes/addcategory_meeting.png">
 
-Add task - Event
+Add task - Meeting
 
-<img src="static/images/wireframes/addtask_addevent.png">
+<img src="static/images/wireframes/addtask_meeting.png">
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all device sizes - Hamburger menu on Mobile devices to fit
 
 -   Interactive elements
 
@@ -88,7 +88,8 @@ Add task - Event
 
 -   [HTML5]
 -   [CSS3]
-
+-   [JS]
+=   [Python]
 
 ### Frameworks, Libraries & Programs Used
 
@@ -119,12 +120,14 @@ Add task - Event
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fctoweyburke.github.io%2Fschool_managment_ms3%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
--   [W3C CSS Validator](https://validator.w3.org/#validate_by_uri)- [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fctoweyburke.github.io%2Fschool_managment_ms3%2F)
--   [Developers Speed Google](https://developers.google.com/speed/pagespeed/insights/) - [Results](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdevelopers.google.com%2Fspeed%2Fpagespeed%2Finsights%2F)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2F5000-scarlet-marmot-zma6vv6u.ws-eu25.gitpod.io%2Fadd_task)
+-   [W3C CSS Validator](https://validator.w3.org/#validate_by_uri)- [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F5000-scarlet-marmot-zma6vv6u.ws-eu25.gitpod.io%2Fadd_task&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+-   [Developers Speed Google](https://developers.google.com/speed/pagespeed/insights/) - [Results](https://pagespeed.web.dev/report?url=https%3A%2F%2F5000-scarlet-marmot-zma6vv6u.ws-eu25.gitpod.io%2Fadd_task)
 
 -   [Lighthouse](developers tool)
     <img src="static/images/lighthouse/lighthouse1.png">
+    <img src="static/images/lighthouse/lighthouse2.png">
+    This tool can be found on the Developer tools on the website. It is evident furhter work is required to improve the performance of this site overall. 
  
 
 
@@ -137,42 +140,43 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about its use.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. There is a background image and a title of Events Manager, along with "All Events" on the main page.
-        2. The main site idea is evident immediately with the image giving the user the idea of an event or party.
-        3. The user has two options, click the Log in or Register buttons or scroll down through the events already entered.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. A title of School Meetings , along with "Scheduled Meetings" on the main page.
+        2. The main site idea is evident immediately with the use of the word MEETING.
+        3. The user has two options, click the Log in or Register buttons or scroll down through the meetings already entered.
 
     2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
 
         1. The site has been designed to be light in colour and contrast. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        3. First time use - users would need to register to gain access to edit/add their own events.
+        3. First time use - users would need to register to gain access to add their own meetings to the schedule.
 
-    3. As a First Time Visitor, I want to look at the events and see if they have key specific information. The tasks provide the user with the name of the person, along with the event and date. 
+    3. As a First Time Visitor, I want to look at the meetings and be able to search to see which ones would apply to my department. 
+    The meeting information provide the user with the name of the meeting, along with the deartment and date. 
         1. Once the new visitor has registered, they will gain further navigation buttons to help them edit or delete any entries they input. 
-        2. The user can also see other friends/families entries but cannot edit or delete them.
+        2. The user can also see other colleagues entries but cannot edit or delete them.
       
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to see if any new events have been added and this is evidnet from loading the page.
+    1. As a Returning Visitor, I want to see if any new meetings have been added and this is evident from loading the page.
 
-        1. These are clearly shown in the All Events section.
-        2. As a returning visitor I can also see who has entered them. 
+        1. These are clearly shown in the "Scheduled Meetings" section of the page.
+        2. As a returning visitor I can also see who has entered the meetings to be scheduled.
 
-    2. As a Returning Visitor, I want to add new people and events myself which is very easy to navigate.
+    2. As a Returning Visitor, I want to add new meetings which is very easy to navigate.
 
-        1. The navigation bar clearly shows "add/edit person" or "New Event" for new events.
+        1. The navigation bar clearly shows "add/edit Meeting".
         2. Here the user can add and contribute to this site.
         
     
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added events.
+    1. As a Frequent User, I want to check to see if there are any newly added meetings.
 
-        1. The user would already be comfortable with the website layout and can easily load the site.
+        1. The user should already be comfortable with the website layout and can easily load the site.
 
-    2. As a Frequent User, I want to add/edit my events or add new people.
+    2. As a Frequent User, I want to add/edit my meetings or dates or descriptions.
 
-        1. The user would already be comfortable with the website layout and can easily do this.
+        1. The user would already be comfortable with the website layout and should find adding or editing their meeting information easy.
 
 
 ### Further Testing
@@ -180,14 +184,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & Samsung Galaxy S21.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Colleagues in my school were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 
 ### Known Bugs
 
 - Mobile responsive - can take time - when looking at mobile view using developer tools, it sometimes does not resize and has to be reloaded to change to mobile view.
 
-- Date picker - Issue with date showing on the events once a new event is added. I have tried several ways to fix this including the link from MongoDB, the code in app.py and edit_task.html. I cannot see where the error is to fix it. 
+- Date picker - There was an issue with the date picker. Rectified by going back over the lesson and updating. 
 
 ## Deployment
 
@@ -250,9 +254,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - The entire website code was written based on the tutorial on the backend development milestone project by [Code Institute](https://codeinstitute.net)
 
--   The full-screen background image came from [Shutterstock](https://www.shutterstock.com/image-vector/set-pink-white-transparent-confetti-helium-1122183473)
-
--   [Materalize](https://materializecss.com/): Materialize site used for a variety of code - Card Panels, buttons, forms, Javascript Side Nav and Nav Bar.
+- [Materalize](https://materializecss.com/): Materialize site used for a variety of code - Card Panels, buttons, forms, Javascript Side Nav and Nav Bar.
 
 
 ### Content

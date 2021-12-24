@@ -2,7 +2,7 @@
 
 [View the live project here.](https://flask-school-mgt-project.herokuapp.com/)
 
-This is an Event Management Website for friends/families to share events. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for people working on desktop, labtop or mobile.
+This is a School Meetings Management Website for all school staff to share work meetings and information. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for all staff working on desktop, labtop or mobile.
 
 
 ** Site set up as a School Management Site
@@ -23,7 +23,7 @@ This is an Event Management Website for friends/families to share events. It is 
 
         1. As a Returning Visitor, I want to log in easily.
         2. As a Returning Visitor, I want to be able to add to this meeting schedule.
-        3. As a Returning Visitor, I want to add meetings and see other school meetings.
+        3. As a Returning Visitor, I want to see other school meetings.
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to check to see if anyone has updated the database with new meetings.
@@ -42,12 +42,9 @@ This is an Event Management Website for friends/families to share events. It is 
         Rubik Beastly is an original, script-generated design based on the Google Fonts. They designed a slightly rounded heavyweight font in which the letters fit perfectly in a single cubelet of the Rubik's Cube. It is clear and easily to read, and useful in a professional setting. 
 
     -   #### Imagery
-        -   Imagery is important to this site. The large, background image is designed to be appealing and catch the user's attention as to what the webiste is for. It also has a modern feel which would relate to events/parties.
-
-        Background image for site pages
-        <img src="">
+        -   No imagery was used as this is information is purely for Educational Purpose so photos are required.
         
-        I used the school logo as the main image for the project. This image is used for development purposes only. 
+         
 
 *   ### Wireframes
 

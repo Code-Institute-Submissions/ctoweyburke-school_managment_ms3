@@ -1,43 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-
 body {
     font-family: rubik;
             
     }
     
-    .topnav img {
-        width: auto;
-        height: 75px;
-        float: left;
-    }
-
-    @media screen and (max-width: 600px) {
-        .topnav img {
-          float: left;
-          width: auto;
-          height: 50px;
-        }
-      }
- 
 .text-shadow {
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5) ;
 }
 
-.brand-logo{
-    margin-left: 20px;
-    padding: 5px;
-    }
 
-    @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) { 
-        .brand-logo { 
-                  float: center;
-                  width: 50%;
-                }
-              }
-     
+@media only screen 
+and (max-width : 350px) {  
+  
+    a.brand-logo { 
+        font-size: 20px;    
+
+    }
+}   
+
+@media only screen 
+and (max-width : 800px) {  
+  
+    nav .brand-logo { 
+        left: 35%;    
+
+    }
+}
+
+
 
 .flashes h4 {
     line-height: 2;
@@ -51,3 +42,4 @@ body {
     margin: 5px;
     line-height: 42px;
 }
+
